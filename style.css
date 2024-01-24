@@ -1,0 +1,396 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./teddy-bear.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+header {
+  padding: 10px;
+  margin: 1%;
+  text-align: center;
+  background: none;
+  color: #fff;
+  line-height: 1;
+}
+
+
+
+.page-header p {
+  color: aqua;
+  font-family: ui-sans-serif;
+  font-style: oblique;
+  font-size: 30px;
+  font-stretch: 100px;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h1::after {
+  font-family: Impact;
+  content: none;
+  color: #8ac4ff;
+  margin-left: 5px;
+}
+
+h2 {
+  font-size: 170%;
+  margin: 5px 50px;
+  color: white;
+
+}
+
+h2::before {
+  font-family: Impact;
+  background-color: white;
+  margin-right: 5px;
+}
+
+h3 {
+  font-size: 108%;
+  margin: 2px 50px;
+
+}
+
+h3::before {
+  font-family: Impact;
+  content: '\273A';
+  color: rgb(241, 241, 149);
+  margin-right: 5px;
+}
+
+h4 {
+  font-size: 100%;
+  margin: 10px 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+  background-color: #da55a3;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  background-color: #d8a47f;
+  justify-content: center;
+
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  /* Adjust the margin to add more space between items */
+}
+
+nav li {
+  position: relative;
+  display: inline-block;
+  margin-right: 35px;
+}
+
+nav a {
+  font-family: cursive;
+  font-style: italic;
+  font-weight: bold;
+  color: #04203b;
+  font-size: 100%;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #fff; /* Background color for the card */
+  border: 1px solid #ccc; /* Border for the card */
+  border-radius: 5px; /* Border radius for rounded corners */
+}
+
+nav li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #d8a47f;
+  /* Adjust the background color as needed */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Set a higher z-index to ensure it appears above other elements */
+}
+
+.nav-item:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  margin: 5px 0;
+}
+
+.submenu a {
+  color: #13293d;
+  text-decoration: none;
+}
+
+.submenu a:hover {
+  color: #f10707;
+}
+
+nav a:hover {
+  color: #f31212;
+  font-size: 130%;
+}
+
+
+main {
+  background-image: url("./teddy-bear.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  background-image: url("./teddy-bear.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 1;
+  background-color: #b9c6ae;
+  padding: 0.5%;
+
+}
+
+
+section {
+  background-image: url("./sun-set.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.contact-me {
+  flex: 3;
+  background-color: #e69c9c;
+  padding: 10px;
+}
+
+
+.scale {
+  transform: none;
+}
+
+.about-me p {
+  font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  margin-right: 0;
+  margin-left: 0;
+  color: white;
+
+}
+
+span[data-descr] {
+  position: relative;
+  text-decoration: underline;
+  color: white;
+  cursor: grab;
+}
+
+span[data-descr]:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  left: 0px;
+  bottom: 24px;
+  min-width: 200px;
+  border: 1px #aaaaaa solid;
+  background-color: #13293d;
+  padding: 12px;
+  color: #fff;
+  font-size: 80%;
+  z-index: 1;
+}
+
+.Prod-Eng ul {
+  margin: 4%;
+  list-style: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+}
+
+.Prod-Eng p {
+  font-size: 100%;
+  margin: 20px;
+  font-family: serif;
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+  background-color: rgb(204, 204, 248);
+}
+
+.resources .links {
+  display: none;
+  padding: 5% 10;
+  margin: 5%;
+}
+
+.resources:hover .links {
+  display: block;
+}
+
+
+.Proc-Eng ul {
+  margin: 4%;
+  list-style: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(233, 53, 53);
+  background-color: white;
+  text-decoration: none;
+}
+
+.Proc-Eng p {
+  font-size: 100%;
+  margin: 20px;
+  font-family: serif;
+  text-align: center;
+  background-color: rgb(245, 159, 216);
+  text-decoration: underline;
+  color: black;
+
+}
+
+.Col-Lec ul {
+  margin: 4%;
+  list-style: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: green;
+  background-color: white;
+  text-decoration: none;
+}
+
+.Col-Lec p {
+  font-size: 100%;
+  margin: 20px;
+  font-family: serif;
+  text-align: center;
+  background-color: rgb(190, 240, 190);
+  text-decoration: underline;
+  color: rgb(6, 65, 6);
+}
+
+.Che-Eng ul {
+  margin: 4%;
+  list-style: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: magenta;
+  background-color: white;
+  text-decoration: none;
+
+}
+
+.Che-Eng p {
+  font-size: 100%;
+  margin: 20px;
+  font-family: serif;
+  text-align: center;
+  background-color: rgb(247, 200, 247);
+  text-decoration: underline;
+  color: red;
+
+}
+
+footer {
+  display: flex;
+  padding: 0.1%;
+  justify-content: center;
+  background: #13293d;
+  color: #fff;
+  font-size: 60%;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Use flex-direction to stack the navbar, sidebar, and body */
+  main,
+  nav {
+    flex-direction: column;
+  }
+
+  /* Make the sidebar stack below the body */
+  aside {
+    order: 2;
+  }
+
+  /* Change the header background */
+  header {
+    background: #772014;
+  }
+
+  /* Change the navbar and footer background */
+  nav,
+  footer {
+    background-color: #bb8588;
+  }
+}
+
+.image-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+  bottom: 8px;
+}
+
+.next-btn {
+  right: 10px;
+  bottom: 8px;
+}
+
+
